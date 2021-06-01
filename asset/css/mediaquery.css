@@ -1,0 +1,12 @@
+/* for tablet to medium screen */
+@media only screen and (max-width: 730px) {
+
+.nav-list{
+    display:none;
+}
+
+.bars{
+    display:block;
+    color:white;
+}
+}

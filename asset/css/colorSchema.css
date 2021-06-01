@@ -1,0 +1,12 @@
+/* color schema declaration */
+:root{
+    --dark-violet:#320d3e !important;
+    --Fuchsia:#d902ee !important;
+    --sepia:#ffd79d !important;
+    --hot-pink:#f162ff !important;
+    --white-smoke:#f5f5f5 !important;
+    --white:#fff;
+    --black:#000;
+    --poppins :'Poppins', sans-serif !important;
+    --f-200 : 200 !important;
+}
