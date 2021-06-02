@@ -70,6 +70,7 @@ body{
 /* styling for landing section starts here */
 #landingSection{
     background-color:var(--dark-violet);
+    background-image:url(../img/pattern6.png);
     /* background-image:linear-gradient(to left bottom, rgb(50,13,62), rgb(86,19,103), rgb(126,23,147), rgb(170,20,192), rgb(217,2,238)), url(../img/Content\ team-amico.png); */
     background-attachment: fixed;
     background-position:top center center;
