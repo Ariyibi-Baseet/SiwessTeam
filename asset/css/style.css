@@ -29,7 +29,7 @@ body{
 
 /* brand */
 .navbar-brand{
-    color:var(--white);
+    color:var(--sepia);
     font-size:25px !important;
     font-weight:700;
 }
