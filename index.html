@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="./asset/css/fontawesome-all.min.css">
 <!--=================================== LOCAL BOOTSTRAP LINK ================================================================-->
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
-<!--=================================== LOCAL BOOTSTRAP LINK ================================================================-->
+<!--=================================== FONT CDN LINK =======================================================================-->
 <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 <!--=================================== LOCAL BOOTSTRAP LINK ================================================================-->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-<!--=================================== LOCAL BOOTSTRAP LINK ================================================================-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<!--=========================================================================================================================-->
     <title>Dot Siwess Team</title>
 <!--=================================== LOCAL BOOTSTRAP LINK ================================================================-->
 </head>
@@ -47,20 +48,36 @@
 
 <!-- Landing Section starts here -->
 <header id="landingSection">
-<div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center align-content-center landing-area flex-column p-4">
+<div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center align-content-center landing-area flex-column py-2">
     <h1 class="landing-text text-white text-center">Dots Web Siwess Team</h1>
     <p class="sub-text text-white text-center">Elevating Technological world to its Peak</p>
     <div class="text-center">
         <button class="btn btn-outline-primary text-white g-btn">Get Started</button>
     </div>
     <!-- <img src="./asset/img/bg-logo.jpg" alt="" class="wavy-left" style="width:100px;"> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wavy"><path fill="#ffffff" fill-opacity="1" d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
 </div>
 </header><!-- Ends here -->
 
 
 <!-- About us section starts here -->
 <section id="aboutUs" class="">
-
+<div class="container-fluid">
+    <div class="col-md-12 col-sm-12 col-lg-12">
+        <h2 class="text-center mt-3 abt-h">About Us</h2>
+    </div>
+    <div class="row g-2">
+        <div class="col-md-6 img-wrapper p-4">
+            <img src="./asset/img/About us page-amico.png" alt="" class="abt-img">
+        </div>
+        <div class="col-md-6 p-3">
+            <h3 class="text-center mt-5 abt-h3">How it started</h3>
+            <p class="abt-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eligendi magni culpa asperiores sunt exercitationem tenetur quo dignissimos perspiciatis doloremque! Quam reiciendis porro tempore deserunt provident sit nam sequi repudiandae odio nesciunt illo aut fugit sunt esse repellat necessitatibus, recusandae et facere explicabo amet atque dicta aliquid neque veritatis. Consequatur!</p>
+            <p class="abt-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eligendi magni culpa asperiores sunt exercitationem tenetur quo dignissimos perspiciatis doloremque! Quam reiciendis porro tempore deserunt provident sit nam sequi repudiandae odio nesciunt illo aut fugit sunt esse repellat necessitatibus, recusandae et facere explicabo amet atque dicta aliquid neque veritatis. Consequatur!</p>
+            <p class="abt-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eligendi magni culpa asperiores sunt exercitationem tenetur quo dignissimos perspiciatis doloremque! Quam reiciendis porro tempore deserunt provident sit nam sequi repudiandae odio nesciunt illo aut fugit sunt esse repellat necessitatibus, recusandae et facere explicabo amet atque dicta aliquid neque veritatis. Consequatur!</p>
+        </div>
+    </div>
+</div>
 </section><!-- Ends here -->
 
 <!-- Gallery section starts here -->
@@ -86,48 +103,49 @@
     // initialize
     window.sr = ScrollReveal();
 
-    sr.reveal('.brand',{
+    sr.reveal('.navbar-brand',{
         duration:2000,
         origin: 'left',
-        distance:'20px'
+        distance:'30px'
     });
 
-    sr.reveal('.nav-list-wrapper',{
+    sr.reveal('.nav-link',{
         duration:2000,
         origin: 'right',
-        distance:'20px'
+        distance:'30px'
     });
 
     sr.reveal('.landing-text',{
         duration:2000,
         origin: 'top',
-        distance:'40px'
+        distance:'40px',
+        delay:1000
     });
 
     sr.reveal('.sub-text',{
         duration:2000,
         origin: 'bottom',
         distance:'30px',
-        delay:1000
+        delay:2000
     });
 
     sr.reveal('.g-btn',{
         duration:2000,
         origin: 'bottom',
         distance:'20px',
-        delay:2000
+        delay:3000
     });
 
-    sr.reveal('.text-left',{
+    sr.reveal('.abt-h',{
         duration:3000,
-        origin: 'left',
-        distance:'30px',
-        viewFactor:0.2
+        origin: 'bottom',
+        distance:'40px',
+        viewFactor:0.3
     });
 
-    sr.reveal('.abt-btn',{
+    sr.reveal('abt-img',{
         duration:2000,
-        origin: 'bottom',
+        origin: 'left',
         distance:'20px',
         delay:2000,
         viewFactor:0.2
