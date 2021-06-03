@@ -18,6 +18,11 @@ body{
     padding:0;
     font-family:'Poppins', sans-serif !important;
     backface-visibility:none !important;
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
 }
 
 /* Styling for navbar starts here */
@@ -67,10 +72,13 @@ body{
 }
 /* Ends here */
 
+/****************************************************************************************************************************************************************/
+/****************************************************************************************************************************************************************/
+
 /* styling for landing section starts here */
 #landingSection{
     background-color:var(--dark-violet);
-    background-image:url(../img/pattern6.png);
+    background-image:url(../img/pattern5.png);
     /* background-image:linear-gradient(to left bottom, rgb(50,13,62), rgb(86,19,103), rgb(126,23,147), rgb(170,20,192), rgb(217,2,238)), url(../img/Content\ team-amico.png); */
     background-attachment: fixed;
     background-position:center;
@@ -103,9 +111,30 @@ body{
     padding:5px 20px !important;
 }
 
-.wavy-left{
+.wavy{
     position:absolute;
     bottom:0;
-    /* width:100%; */
-    background:#fff;
 }
+
+/* Ends here */
+
+/****************************************************************************************************************************************************************/
+/****************************************************************************************************************************************************************/
+
+/* styling for About us section starts here */
+.img-wrapper img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.abt-h{
+    font-weight:bolder !important;
+    color:var(--dark-violet);
+}
+.abt-text{
+    text-align:justify !important;
+}
+.abt-h3{
+    color:var(--dark-violet);
+}
+/* Ends here */
