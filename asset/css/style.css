@@ -1,22 +1,12 @@
-/* import css for the color schema */
-@import url('colorSchema.css');
 
-/* import css for media queries */
-@import url('mediaquery.css');
-
-/* use local fonts */
-@font-face {
-    font-family:'Monoton';
-    src: url('../vendor/font/Monoton-Regular.ttf') format('truetype');
-}
 
 /* General styling */
 body{
     scroll-behavior:smooth;
-    width:100%;
+    max-width:100%;
     margin:0;
     padding:0;
-    font-family:'Poppins', sans-serif !important;
+    font-family: 'Roboto', sans-serif;
     backface-visibility:none !important;
     overflow-x:hidden;
 }
@@ -28,113 +18,66 @@ body{
 /* Styling for navbar starts here */
 .navbar{
     max-width:100% !important;
-    background-color:var(--dark-violet);
     z-index:99;
+    background:#fff;
 }
 
 /* brand */
 .navbar-brand{
-    color:var(--sepia);
+    color:var(--dark-violet);
     font-size:25px !important;
-    font-weight:700;
-}
-.navbar-brand:hover{
-    color:var(--sepia);
-}
-
-.navbar-toggler{
-    outline:none !important;
-    border:none;
-}
-
-.navbar-toggler-icon{
-    color:var(--sepia);
-    font-size:25px !important;
-    width:100%;
-    height:100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
 }
 
 .nav-link{
-    color:var(--Fuchsia);
-}
-.nav-link:hover{
-    color:var(--white-smoke);
-}
-
-.active{
-    color:var(--white-smoke);
+    color:var(--dark-violet);
+    font-weight: 400 !important;
 }
 
 /* sections */
 #landingSection,#aboutUs,#gallery,#ourTeam,#contactUs{
     width:100%;
-    height:100vh;
-}
-/* Ends here */
-
-/****************************************************************************************************************************************************************/
-/****************************************************************************************************************************************************************/
-
-/* styling for landing section starts here */
-#landingSection{
-    background-color:var(--dark-violet);
-    background-image:url(../img/pattern5.png);
-    /* background-image:linear-gradient(to left bottom, rgb(50,13,62), rgb(86,19,103), rgb(126,23,147), rgb(170,20,192), rgb(217,2,238)), url(../img/Content\ team-amico.png); */
-    background-attachment: fixed;
-    background-position:center;
-    position:relative;
+    min-height:100vh;
 }
 
+/* Styling for landing section starts here */
 .landing-area{
-    width:inherit;
-    height:inherit;
+    width:100%;
+    min-height:100vh;
 }
 
-.landing-text{
-    font-family:Monoton;
-    letter-spacing:3px;
+.dots-intro-text{
+    padding-right:1rem;
+    min-height:50vh;
 }
-.sub-text{
-    font-family:'Poppins' sans-serif;
-    font-size:23px;
-    letter-spacing:4px;
+
+.dots-intro-text h1{
+    white-space: nowrap;
+    font-size:1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    color:var(--dark-violet);
+}
+
+.dots-intro-text p{
+    white-space:pre-wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color:var(--d-gray);
+    text-align:justify;
 }
 
 .g-btn{
-    background-color:var(--Fuchsia) !important;
-    color:var(--white);
-    border-radius:20px !important;
-    border:hidden !important;
-    outline: none !important;
-    border-color:none;
-    letter-spacing:3px;
-    padding:5px 20px !important;
+    background-color:var(--dark-violet) !important;
 }
 
-.wavy{
-    position:absolute;
-    bottom:0;
+.dots-intro-image{
+    min-height:50vh;
 }
 
-/* Ends here */
-
-/****************************************************************************************************************************************************************/
-/****************************************************************************************************************************************************************/
-
-/* styling for About us section starts here */
-.img-wrapper img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.dots-intro-image img{
+    min-width:200px;
+    margin:auto;
 }
-.abt-h{
-    font-weight:bolder !important;
-    color:var(--dark-violet);
-}
-.abt-text{
-    text-align:justify !important;
-}
-.abt-h3{
-    color:var(--dark-violet);
-}
-/* Ends here */
+/* ends here */
