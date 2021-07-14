@@ -1,109 +1,131 @@
 // initialize
 window.sr = ScrollReveal();
 
+// scroll effect for some classes
+
+// for navbar brands
 sr.reveal('.navbar-brand',{
     duration:3000,
     origin: 'left',
     distance:'30px'
 });
 
+// for nav links
 sr.reveal('.nav-link',{
     duration:3000,
     origin: 'right',
     distance:'30px'
 });
 
-sr.reveal('.landing-text',{
+// for landing section header
+sr.reveal('.text-left',{
+    delay:1000,
     duration:2000,
     origin: 'top',
     distance:'40px',
     easing:'ease',
     reset:true,
     opacity:0,
-    rotate:{
-        x:50,
-        y:10,
-        // z:50
-    }
 });
 
-sr.reveal('.sub-text',{
+// for landing-section paragraph
+sr.reveal('.text-justify',{
+    delay:2000,
     duration:2000,
     origin: 'bottom',
-    distance:'30px',
+    distance:'40px',
     easing:'ease',
     reset:true,
-    delay:1000
+    opacity:0,
 });
 
-sr.reveal('.start-btn',{
-    duration:2000,
-    origin: 'bottom',
-    distance:'20px',
-    easing:'ease',
-    reset:true,
-    delay:2000,
-    viewFactor:0.3
-});
-
-sr.reveal('.abt-h',{
-    duration:3000,
-    origin: 'bottom',
-    distance:'40px',
-    easing:'ease',
-    viewFactor:0.3,
-    reset:true
-});
-
-sr.reveal('.abt-img',{
-    duration:2000,
-    origin: 'left',
-    distance:'30px',
-    easing:'ease',
-    delay:1000,
-    reset:true
-});
-
-// how it started heading(h3)
-sr.reveal('.his-text',{
-    duration:3000,
-    origin: 'top',
-    distance:'30px',
-    easing:'ease',
-    reset:true
-});
-
-sr.reveal('.f-p',{
-    duration:3000,
-    origin: 'right',
-    distance:'40px',
-    easing:'ease',
-    delay:1000,
-    useDelay:'once',
-    viewFactor:0.1,
-    reset:true
-});
-
-sr.reveal('.s-p',{
-    duration:3000,
-    origin: 'right',
-    distance:'40px',
-    easing:'ease',
-    delay:2000,
-    useDelay:'once',
-    viewFactor:0.1,
-    reset:true
-
-});
-
-sr.reveal('.th-p',{
-    duration:3000,
-    origin: 'right',
-    distance:'40px',
-    easing:'ease',
+// for get started button
+sr.reveal('.g-btn',{
     delay:3000,
-    useDelay:'once',
-    reset:true
+    duration:2000,
+    origin: 'bottom',
+    distance:'40px',
+    easing:'ease',
+    reset:true,
+    opacity:0,
+});
+
+// for landing section image
+// sr.reveal('.landing-img',{
+//     delay:4000,
+//     duration:2000,
+//     origin: 'right',
+//     distance:'40px',
+//     easing:'ease',
+//     opacity:0,
+// });
+
+// for about section header
+sr.reveal('.abt-text',{
+    duration:2000,
+    origin: 'top',
+    distance:'40px',
+    easing:'ease',
+    opacity:0,
+    reset:true,
+    viewFactor:0.2
+});
+
+// for about section paragraph
+sr.reveal('.abt-sub-text',{
+    duration:2000,
+    origin: 'right',
+    distance:'40px',
+    easing:'ease-in',
+    opacity:0,
+    reset:true,
 });
 
 
+// for feature boxes
+// ease in from left
+sr.reveal('.box-l',{
+    delay:1000,
+    duration:1000,
+    origin: 'left',
+    distance:'40px',
+    easing:'ease-in',
+    opacity:0,
+    reset:true,
+});
+
+// for feature boxes
+// ease in from top
+sr.reveal('.box-t',{
+    delay:1000,
+    duration:1000,
+    origin: 'top',
+    distance:'40px',
+    easing:'ease-in',
+    opacity:0,
+    reset:true,
+});
+
+// for feature boxes
+// ease in from bottom
+sr.reveal('.box-b',{
+    delay:2000,
+    duration:1000,
+    origin: 'bottom',
+    distance:'40px',
+    easing:'ease-in',
+    opacity:0,
+    reset:true,
+});
+
+// for feature boxes
+// ease in from right
+sr.reveal('.box-r',{
+    delay:3000,
+    duration:1000,
+    origin: 'right',
+    distance:'40px',
+    easing:'ease-in',
+    opacity:0,
+    reset:true,
+});
