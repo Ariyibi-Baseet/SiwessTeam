@@ -273,10 +273,20 @@ a .project-btn:hover{
     justify-content:center;
 }
 
+.p-overlay a{
+    margin-top:4px;
+    color:var(--d-gray);
+}
+
+.p-overlay a:hover{
+    color:var(--dark-violet);
+    transition:300ms ease-in;
+}
+
 .inner-project-box-right:hover .p-overlay{
     bottom:0;
     opacity:1;
-    width:15%;
+    width:12%;
 }
 
 .project-b-btn{
