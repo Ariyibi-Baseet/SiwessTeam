@@ -3,23 +3,9 @@ window.sr = ScrollReveal();
 
 // scroll effect for some classes
 
-// for navbar brands
-// sr.reveal('.navbar-brand',{
-//     duration:3000,
-//     origin: 'left',
-//     distance:'30px'
-// });
-
-// for nav links
-// sr.reveal('.nav-link',{
-//     duration:3000,
-//     origin: 'right',
-//     distance:'30px'
-// });
-
 // for landing section header
 sr.reveal('.text-left',{
-    delay:1000,
+    // delay:1000,
     duration:2000,
     origin: 'top',
     distance:'40px',
@@ -30,7 +16,7 @@ sr.reveal('.text-left',{
 
 // for landing-section paragraph
 sr.reveal('.text-justify',{
-    delay:2000,
+    // delay:2000,
     duration:2000,
     origin: 'bottom',
     distance:'40px',
@@ -41,7 +27,7 @@ sr.reveal('.text-justify',{
 
 // for get started button
 sr.reveal('.g-btn',{
-    delay:3000,
+    delay:1000,
     duration:2000,
     origin: 'bottom',
     distance:'40px',
@@ -91,6 +77,7 @@ sr.reveal('.box-l',{
     distance:'40px',
     easing:'ease-in',
     opacity:0,
+    viewFactor:0.2,
     reset:true,
 });
 
@@ -109,7 +96,7 @@ sr.reveal('.box-t',{
 // for feature boxes
 // ease in from bottom
 sr.reveal('.box-b',{
-    delay:2000,
+    delay:1000,
     duration:1000,
     origin: 'bottom',
     distance:'40px',
@@ -121,7 +108,7 @@ sr.reveal('.box-b',{
 // for feature boxes
 // ease in from right
 sr.reveal('.box-r',{
-    delay:3000,
+    delay:1000,
     duration:1000,
     origin: 'right',
     distance:'40px',
