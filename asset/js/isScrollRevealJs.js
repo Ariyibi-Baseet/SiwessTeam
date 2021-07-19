@@ -4,18 +4,18 @@ window.sr = ScrollReveal();
 // scroll effect for some classes
 
 // for navbar brands
-sr.reveal('.navbar-brand',{
-    duration:3000,
-    origin: 'left',
-    distance:'30px'
-});
+// sr.reveal('.navbar-brand',{
+//     duration:3000,
+//     origin: 'left',
+//     distance:'30px'
+// });
 
 // for nav links
-sr.reveal('.nav-link',{
-    duration:3000,
-    origin: 'right',
-    distance:'30px'
-});
+// sr.reveal('.nav-link',{
+//     duration:3000,
+//     origin: 'right',
+//     distance:'30px'
+// });
 
 // for landing section header
 sr.reveal('.text-left',{
