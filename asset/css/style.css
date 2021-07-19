@@ -94,8 +94,10 @@ body{
 
 .dots-intro-image img{
     min-width:200px;
-    min-height:200px;
+    height:400px;
     margin:auto;
+    display:flex;
+    margin-right:auto;
 }
 /* ends here */
 
