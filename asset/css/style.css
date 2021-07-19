@@ -40,8 +40,13 @@ body{
     font-weight:bolder;
 }
 
+.navbar-toggler-icon img{
+    width:40px;
+    height:40px;
+}
+
 .nav-link{
-    color:var(--dark-violet);
+    color:var(--dark-violet) !important;
     font-weight: 400 !important;
 }
 /* ends here */
